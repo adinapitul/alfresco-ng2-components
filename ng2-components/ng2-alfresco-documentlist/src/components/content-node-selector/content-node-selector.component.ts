@@ -16,8 +16,8 @@
  */
 
 import { Component, EventEmitter, Inject, Input, Optional, Output, ViewEncapsulation } from '@angular/core';
-import { MinimalNodeEntity, NodePaging } from 'alfresco-js-api';
 import { MD_DIALOG_DATA, MdDialogRef } from '@angular/material';
+import { MinimalNodeEntity, NodePaging } from 'alfresco-js-api';
 import { SearchOptions, SearchService } from '../../services/search.service';
 
 @Component({
@@ -32,7 +32,7 @@ export class ContentNodeSelectorComponent {
 
     inDialog: boolean = false;
 
-    private nodes: NodePaging;
+    nodes: NodePaging;
 
     @Input()
     title: string;
@@ -77,7 +77,7 @@ export class ContentNodeSelectorComponent {
 
     /**
      * Invoked when user selects a node
-     * 
+     *
      * @param event CustomEvent for node-select
      */
     onNodeSelect(event: any) {
@@ -86,7 +86,7 @@ export class ContentNodeSelectorComponent {
 
     /**
      * * Invoked when user unselects a node
-     * 
+     *
      * @param param0 Custom event for node-unselect
      */
     onNodeUnselect({ node }) {
